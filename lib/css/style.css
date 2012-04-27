@@ -113,8 +113,25 @@ a:focus {
 }
 
 .step h2 {font-size:100px;margin:60px 0;font-family: 'Six Caps', Arial, sans-serif;}
+.step h3 {font-size:70px;margin:60px 0 30px 0;font-family: 'Six Caps', Arial, sans-serif;}
+.heading h2 {font-size:450px;}
+.title h4 {font-size:100px;font-family: 'Six Caps', Arial, sans-serif;}
+
+dl.specs {float:right;margin:-1.8em 00px 0 0}
+dl.specs dt {display:inline-block;}
+dl.specs dd {display:inline-block;}
+
+dl.specs dd {}
+
+.step ol {list-style-type:decimal}
 .step ul {margin:50px 0; list-style-type:circle}
 .step ul li {margin:20px 0;font-size:30px;}
+
+.step ul.positivenegative {list-style-type:none;}
+.step ul.positivenegative span {font-weight:bold;}
+.positive span {color:green;}
+.negative span {color:red;}
+
 
 .impress-enabled .step {
     margin: 0;
@@ -329,7 +346,7 @@ b {
     We also make other steps visible and give them a pointer cursor using the
     `impress-on-` class.
 */
-.impress-on-overview .step, .impress-on-deliveroverview .step {
+.impress-on-overview .step, .impress-on-deliveroverview .step, .impress-on-engagementoverview .step, .impress-on-syndicationoverview .step {
     opacity: 1;
     cursor: pointer;
 }
